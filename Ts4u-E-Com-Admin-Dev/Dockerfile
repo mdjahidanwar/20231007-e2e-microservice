@@ -1,6 +1,8 @@
 FROM node:14-alpine 
-WORKDIR /admin-app
+RUN mkdir -p /admin/app
+WORKDIR /admin/app
 COPY . .
 RUN npm install
 RUN npm build
-CMD ["npm","start"]
+EXPOSE 3000
+CMD "npm" "start"
