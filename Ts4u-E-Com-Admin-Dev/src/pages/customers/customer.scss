@@ -1,0 +1,41 @@
+.customer_modal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .card{
+        height: 140px;
+        width: 160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 5px;
+        .count{
+            font-size: 28px;
+        }
+        
+    }
+   
+}
+.customer_modal_info{
+    table{
+        width: 100%;
+        tr{
+            width: 100%;
+            td{
+                width: 35%;
+                &:nth-child(1),
+                &:nth-child(3){
+                    font-weight: bold;
+                    width: 15%;
+                }
+            }
+        }
+    }
+    .banned{
+        margin-top: 10px;
+        label{
+            margin-right: 20px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.appbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: white;
+    border-bottom: 1px solid gray;
+    z-index: 11;
+    .appbar_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+        .collapse_icon{
+            cursor: pointer;
+        }
+       button{
+           border: none;
+           outline: none;
+           background: transparent;
+           font-size: 16px;
+           font-weight:400;
+           cursor: pointer;
+       }
+    }
+    
+.toggle{
+    display: none;
+}
+.collapse{
+    display: inline-block;
+}
+    @media (max-width:770px) {
+
+        .toggle{
+            display: inline-block;
+        }
+        .collapse{
+            display: none;
+        }
+    }
+    
+}
+.pro-sidebar {
+    height: 100vh;
+    position: sticky;
+    left: 0;
+    top: 0;
+
+    .pro-sidebar-layout{
+        &::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        /* Track */
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+        
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+    }
+
+
+}
+.main_layout{
+    width: 100%;
+    .main_container{
+        min-height: 92vh;
+        padding: 20px;
+        background: #EBEDEF;
+    }
+}

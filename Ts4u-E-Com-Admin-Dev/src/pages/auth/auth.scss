@@ -1,0 +1,28 @@
+.auth_container{
+    height: 100vh;
+   background: #EBEDEF;
+   position: relative;
+    .auth{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-70%);
+        max-width: 600px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: white;
+        box-shadow:1px 1px 5px rgba(0, 0, 0, 0.1);
+        .register{
+            display: block;
+        }
+        .label{
+            .ant-form-item-required{
+              float: left !important;
+            }
+            label{
+                float: left !important;
+            }
+          }
+    }
+}
